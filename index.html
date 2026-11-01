@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic portfolio of Dilip Kumar Mahato, M.Tech student in Transportation Engineering at IIT Roorkee.">
+  <title>Dilip Kumar Mahato | Transportation Engineering</title>
+  <style>
+    :root {
+      --navy: #18324a;
+      --teal: #146c70;
+      --ink: #243748;
+      --muted: #596c78;
+      --cream: #f7f9f8;
+      --line: #dce5e5;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Times New Roman", Times, serif; color: var(--ink); background: var(--cream); line-height: 1.65; }
+    a { color: var(--teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1040px, 90%); margin: auto; }
+    header { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 15px 0; }
+    .brand { color: var(--navy); font-size: 1.15rem; font-weight: bold; }
+    nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    nav a { color: var(--ink); font-size: .98rem; }
+    .hero { padding: 86px 0 82px; background: linear-gradient(130deg, #18324a 0%, #205c64 100%); color: #fff; }
+    .eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: .83rem; color: #aee4d7; margin: 0 0 14px; }
+    h1 { font-size: clamp(2.65rem, 6vw, 4.5rem); line-height: 1.09; margin: 0 0 18px; }
+    .hero p.lead { font-size: 1.24rem; max-width: 670px; color: #e4f0f1; margin: 0 0 28px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button { display: inline-block; padding: 11px 20px; border-radius: 5px; font-weight: bold; border: 1px solid #fff; color: #fff; }
+    .button.primary { color: var(--navy); background: #fff; }
+    .button:hover { text-decoration: none; opacity: .9; }
+    section { padding: 62px 0; scroll-margin-top: 74px; }
+    h2 { color: var(--navy); font-size: 2rem; margin: 0 0 14px; }
+    .intro { max-width: 790px; font-size: 1.1rem; }
+    .chips { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 22px; }
+    .chip { background: #e8f2f0; border: 1px solid #d1e4e0; color: #24585b; padding: 5px 12px; border-radius: 30px; font-size: .95rem; }
+    .muted { color: var(--muted); }
+    .alt { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 19px; margin-top: 26px; }
+    .card { padding: 25px; border: 1px solid var(--line); background: var(--white); border-radius: 9px; box-shadow: 0 3px 13px rgba(19, 49, 65, .035); }
+    .alt .card { background: #fafdfe; }
+    .card h3 { color: var(--navy); font-size: 1.3rem; margin: 4px 0 10px; }
+    .card p { margin: 0; }
+    .card .label { color: var(--teal); font-weight: bold; font-size: .91rem; }
+    .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 22px; }
+    .contact p { margin: 0 0 9px; }
+    footer { padding: 22px 0; background: var(--navy); color: #e5eeee; text-align: center; }
+    footer p { margin: 0; font-size: .95rem; }
+    :focus-visible { outline: 3px solid #6abdb6; outline-offset: 4px; }
+    @media (max-width: 650px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      nav { gap: 12px; }
+      .hero { padding: 62px 0; }
+      .grid, .contact { grid-template-columns: 1fr; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">Dilip Kumar Mahato</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <div class="container">
+        <p class="eyebrow">Transportation Engineering | IIT Roorkee</p>
+        <h1>Dilip Kumar Mahato</h1>
+        <p class="lead">M.Tech student in Transportation Engineering, Department of Civil Engineering, IIT Roorkee. Interested in pedestrian safety, road-user behavior, and safer urban mobility.</p>
+        <div class="actions">
+          <a class="button primary" href="#research">Explore My Research</a>
+          <a class="button" href="mailto:dilip_km@ce.iitr.ac.in">Email Me</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="intro">I am pursuing my M.Tech in Transportation Engineering at the Indian Institute of Technology Roorkee. My academic work focuses on how pedestrians and drivers understand and respond to crossing facilities under India's mixed traffic conditions. I am particularly interested in practical safety improvements informed by road-user perceptions and traffic behavior.</p>
+        <div class="chips" aria-label="Research topics">
+          <span class="chip">Pedestrian Safety</span>
+          <span class="chip">Mixed Traffic</span>
+          <span class="chip">Smart Crosswalks</span>
+          <span class="chip">Road-User Behavior</span>
+          <span class="chip">Intelligent Transportation Systems</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="research">
+      <div class="container">
+        <h2>Current Research</h2>
+        <p class="muted">Ongoing M.Tech dissertation and related research activities</p>
+        <div class="grid">
+          <article class="card">
+            <span class="label">M.Tech Dissertation | Ongoing</span>
+            <h3>Road Users' Perceptions of Smart Crosswalks in Mixed Traffic</h3>
+            <p>Studying how pedestrians and drivers perceive crossing safety, interpret smart-crosswalk information, and make crossing or yielding decisions in Indian urban traffic.</p>
+          </article>
+          <article class="card">
+            <span class="label">Research Approach | In Development</span>
+            <h3>Surveys and Traffic Scenarios</h3>
+            <p>Developing pedestrian and driver questionnaires and scenario-based evaluations to compare conventional zebra crossings with proposed smart-crosswalk information and warning systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <div class="container">
+        <h2>Research Interests</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Pedestrian and Driver Behavior</h3>
+            <p>Yielding decisions, gap acceptance, perceived safety, risk perception, and trust in crossing information.</p>
+          </article>
+          <article class="card">
+            <h3>Traffic Safety and Emerging Technologies</h3>
+            <p>Smart crosswalks, vulnerable road-user interactions, traffic conflicts, and technology-supported warning systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="contact">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>For academic discussions, research ideas, or collaborations, you can reach me through email or LinkedIn.</p>
+        <div class="contact">
+          <div>
+            <p><strong>Institutional Email</strong></p>
+            <p><a href="mailto:dilip_km@ce.iitr.ac.in">dilip_km@ce.iitr.ac.in</a></p>
+            <p><strong>Personal Email</strong></p>
+            <p><a href="mailto:mahato.dilip14@gmail.com">mahato.dilip14@gmail.com</a></p>
+          </div>
+          <div>
+            <p><strong>LinkedIn</strong></p>
+            <p><a href="https://www.linkedin.com/in/mahatodilip07/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mahatodilip07</a></p>
+            <p><strong>Affiliation</strong></p>
+            <p>Department of Civil Engineering<br>Indian Institute of Technology Roorkee<br>Uttarakhand, India</p>
+          </div>
+        </div>
+        <!-- Optional: add a public phone/WhatsApp number here only if you want it searchable online. -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container"><p>&copy; <span id="year">2026</span> Dilip Kumar Mahato. Personal academic website.</p></div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
